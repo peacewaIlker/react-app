@@ -3,10 +3,11 @@ import './App.css';
 
 const images = [
     'image1.jpg', // Убедитесь, что пути к изображениям корректны
-    'logo192.png',
-    'logo512.png'
+    'logo192.png'
     // ...
 ];
+
+const loadingGif = 'gus.gif'; // Путь к вашему GIF файлу
 
 function App() {
     const [image, setImage] = useState(null);
@@ -28,7 +29,6 @@ function App() {
     return (
         <div className="App">
             <div className="top-container">
-                {isCalculating && <div className="loading">Загрузка...</div>}
                 {!isCalculating && !image && (
                     <>
                         <h1>Нажми сюда</h1>
@@ -38,6 +38,7 @@ function App() {
             </div>
             <div className="result-container">
                 <div className="image-container">
+                    {isCalculating && <img src={loadingGif} alt="Loading" />}
                     {image && !loading && (
                         <img src={image} alt="Result" />
                     )}
