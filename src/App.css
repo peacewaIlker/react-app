@@ -3,6 +3,10 @@
   padding: 50px;
 }
 
+.top-container {
+  margin-bottom: 20px; /* Отступ снизу для разделения с рамкой */
+}
+
 .arrow-down {
   font-size: 2em;
   margin: 20px 0;
