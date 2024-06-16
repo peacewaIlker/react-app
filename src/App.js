@@ -15,13 +15,6 @@ function App() {
     const [loading, setLoading] = useState(false);
     const [isCalculating, setIsCalculating] = useState(false);
 
-    useEffect(() => {
-        tg.ready()
-    }, []);
-
-    const onClose = () => {
-        tg.close()
-    }
     const getResult = () => {
         setImage(null); // Убираем предыдущую картинку
         setIsCalculating(true);
@@ -44,12 +37,14 @@ function App() {
                 </>
             )}
             {loading && <div className="loading">Calculating...</div>}
-            {image && !loading && (
-                <div className="result">
-                    <img src={image} alt="Result" />
-                    <button onClick={getResult}>Получить прогноз</button>
-                </div>
-            )}
+            <div className="result-container">
+                {image && !loading && (
+                    <div className="image-container">
+                        <img src={image} alt="Result" />
+                    </div>
+                )}
+                <button onClick={getResult}>Получить прогноз</button>
+            </div>
         </div>
     );
 }
