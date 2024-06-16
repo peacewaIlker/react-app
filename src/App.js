@@ -1,12 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
-const tg = window.Telegram.WebApp;
-
 const images = [
-    // Добавьте URL-адреса или импортируйте изображения здесь
+    'image1.jpg',
     'logo192.png',
-    'logo512.png',
+    'logo512.png'
+    // Убедитесь, что пути к изображениям корректны
     // ...
 ];
 
@@ -29,22 +28,22 @@ function App() {
 
     return (
         <div className="App">
-            {!image && !isCalculating && (
+            {isCalculating && <div className="loading">Calculating...</div>}
+            {!isCalculating && !image && (
                 <>
                     <h1>Нажми сюда</h1>
                     <div className="arrow-down">↓</div>
                     <button onClick={getResult}>Рассчитать результат</button>
                 </>
             )}
-            {loading && <div className="loading">Calculating...</div>}
-            <div className="result-container">
-                {image && !loading && (
+            {!isCalculating && image && (
+                <div className="result-container">
                     <div className="image-container">
                         <img src={image} alt="Result" />
                     </div>
-                )}
-                <button onClick={getResult}>Получить прогноз</button>
-            </div>
+                    <button onClick={getResult}>Получить прогноз</button>
+                </div>
+            )}
         </div>
     );
 }

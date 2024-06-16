@@ -33,8 +33,7 @@ button {
   max-width: 300px; /* Максимальная ширина для больших экранов */
   padding-top: 90%; /* Соотношение сторон 1:1 (квадрат) */
   position: relative;
-  border: 1px solid #ccc; /* Опционально, рамка для контейнера */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Опционально, тень для контейнера */
+  border: 2px solid black; /* Черная рамка */
   margin-bottom: 20px; /* Отступ снизу для кнопки */
 }
 
