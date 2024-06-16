@@ -1,6 +1,11 @@
 .App {
   text-align: center;
   padding: 50px;
+  background-image: url('/background.png'); /* Убедитесь, что путь к картинке корректен */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh; /* Минимальная высота экрана */
 }
 
 .top-container {
