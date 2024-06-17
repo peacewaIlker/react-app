@@ -1,14 +1,33 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Убираем скроллинг */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url('./images/background.png'); /* Убедитесь, что путь к картинке корректен */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  min-height: 100vh; /* Минимальная высота экрана */
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .result-container {
@@ -16,7 +35,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%; /* Контейнер занимает всю ширину экрана */
+  width: 100%;
+  max-width: 90vw;
   margin-top: calc(100vh / 3); /* Отступ сверху - 1/3 высоты экрана */
 }
 
