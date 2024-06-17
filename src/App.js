@@ -18,7 +18,7 @@ function App() {
         tg.ready()
         tg.expand()
     }, []);
-    const [image, setImage] = useState(null);
+    const [image, setImage] = useState(defaultImage);
     const [loading, setLoading] = useState(false);
     const [isCalculating, setIsCalculating] = useState(false);
 
