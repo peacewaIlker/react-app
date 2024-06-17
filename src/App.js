@@ -28,14 +28,6 @@ function App() {
 
     return (
         <div className="App">
-            <div className="top-container">
-                {!isCalculating && !image && (
-                    <>
-                        <h1>Нажми сюда</h1>
-                        <div className="arrow-down">↓</div>
-                    </>
-                )}
-            </div>
             <div className="result-container">
                 <div className="image-container">
                     {isCalculating && <img src={loadingGif} alt="Loading" />}
