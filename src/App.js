@@ -46,13 +46,13 @@ function App() {
             <div className="result-container">
                 <div className="image-container">
                     {isCalculating && <img src={loadingGif} alt="Loading" />}
-                    {image && !loading && (
+                    {!isCalculating && image && (
                         <img src={image} alt="Result" />
                     )}
                 </div>
                 {!isCalculating && (
                     <button onClick={getResult}>
-                        {isCalculating || !image ? 'START HACKING' : 'START HACKING'}
+                        {isCalculating || !image ? 'Рассчитать результат' : 'Получить прогноз'}
                     </button>
                 )}
             </div>
