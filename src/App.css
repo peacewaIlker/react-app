@@ -120,8 +120,8 @@ button:hover {
     padding: 30px;
   }
 
-  button {
-    padding: 16px 32px;
+  .App button {
+    padding: 1px 20px;
     font-size: 20px;
   }
 }
@@ -130,9 +130,8 @@ button:hover {
   .App {
     padding: 20px;
   }
-
-  button {
-    padding: 12px 24px;
-    font-size: 16px;
+  .App button {
+    padding: 1px 20px;
+    font-size: 20px;
   }
 }
