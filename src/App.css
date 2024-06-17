@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  padding: 0; /* Убираем padding */
+  padding: 0;
   background-image: url('./images/background.png'); /* Убедитесь, что путь к картинке корректен */
   background-size: cover;
   background-repeat: no-repeat;
@@ -16,22 +16,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%; /* Контейнер занимает всю ширину экрана */
   margin-top: calc(100vh / 3); /* Отступ сверху - 1/3 высоты экрана */
 }
 
 .image-container {
-  width: 90%;
-  max-width: 540px; /* Максимальная ширина для больших экранов */
-  padding-top: calc(90% / 1.3); /* Соотношение сторон 1.3:1 */
+  width: 90vw; /* Контейнер занимает 90% ширины экрана */
+  height: calc(90vw / 1.3); /* Высота равна ширине, деленной на 1.3 */
   position: relative;
   border: 2px solid black; /* Черная рамка */
   margin-bottom: 20px; /* Отступ снизу для кнопки */
 }
 
 .image-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
