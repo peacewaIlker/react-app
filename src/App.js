@@ -8,8 +8,8 @@ const images = [
     // ...
 ];
 
-const loadingGif = 'loading.gif'; // Путь к вашему GIF файлу
-const headerImage = 'tg.png'; // Путь к вашему изображению для замены подписи
+const loadingGif = 'gus.gif'; // Путь к вашему GIF файлу
+const headerImage = 'tg.jpg'; // Путь к вашему изображению для замены подписи
 
 function App() {
     const [image, setImage] = useState(null);
@@ -44,9 +44,11 @@ function App() {
                         <img src={image} alt="Result" />
                     )}
                 </div>
-                <button onClick={getResult}>
-                    {isCalculating || !image ? 'Рассчитать результат' : 'Получить прогноз'}
-                </button>
+                {!isCalculating && (
+                    <button onClick={getResult}>
+                        {isCalculating || !image ? 'Рассчитать результат' : 'Получить прогноз'}
+                    </button>
+                )}
             </div>
         </div>
     );
