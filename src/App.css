@@ -81,6 +81,7 @@ body {
   border: 2px solid black; /* Черная рамка */
   margin-bottom: 40px; /* Увеличенный отступ снизу для кнопки */
   border-radius: 8px; /* Опционально, для закругленных углов */
+  background: #002038;
 }
 
 .image-container img {
