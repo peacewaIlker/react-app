@@ -4,9 +4,7 @@ import './App.css';
 const tg = window.Telegram.WebApp;
 
 const images = [
-    'image1.jpg', // Убедитесь, что пути к изображениям корректны
-    'image2.jpg',
-    'image3.jpg',
+    'testpic.jpg' // Убедитесь, что пути к изображениям корректны
     // ...
 ];
 
