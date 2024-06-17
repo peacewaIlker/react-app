@@ -92,6 +92,15 @@ button {
   padding: 20px 40px; /* Увеличенный размер кнопки */
   font-size: 24px; /* Увеличенный размер шрифта кнопки */
   margin-top: 20px; /* Отступ сверху для кнопки */
+  background-color: #002038; /* Фон кнопки */
+  color: white; /* Цвет текста */
+  border: none; /* Убираем рамку */
+  border-radius: 25px; /* Закругленные края */
+  cursor: pointer; /* Указатель курсора при наведении */
+}
+
+button:hover {
+  background-color: #003060; /* Более светлый фон при наведении */
 }
 
 .hidden {
