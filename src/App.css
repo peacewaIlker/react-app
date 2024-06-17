@@ -48,7 +48,7 @@ body {
 .header-image {
   max-width: 30px; /* Уменьшенный размер изображения */
   height: auto;
-  margin-right: 10px; /* Отступ между изображением и текстом */
+  margin-right: 2px; /* Отступ между изображением и текстом */
 }
 
 .header-text {
@@ -56,6 +56,7 @@ body {
   font-weight: 400; /* Regular */
   font-size: 20px; /* Уменьшенный размер шрифта */
   line-height: 1.2;
+  color: #002038;
 }
 
 .header-text-bold {
