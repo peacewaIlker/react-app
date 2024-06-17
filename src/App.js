@@ -6,11 +6,28 @@ const tg = window.Telegram.WebApp;
 const images = [
     '1.png',
     '2.png',
-    '3.png',// Убедитесь, что пути к изображениям корректны
+    '3.png',
+    '4.png',
+    '5.png',
+    '6.png',
+    '7.png',
+    '8.png',
+    '9.png',
+    '10.png',
+    '11.png',
+    '12.png',
+    '13.png',
+    '14.png',
+    '15.png',
+    '16.png',
+    '17.png',
+    '18.png',
+    '19.png',
+    '20.png'
     // ...
 ];
 
-const loadingGif = 'loading.gif'; // Путь к вашему GIF файлу
+const loadingGif = 'XDZT.gif'; // Путь к вашему GIF файлу
 const headerImage = 'tg.png'; // Путь к вашему изображению для замены подписи
 const defaultImage = 'basic.png'; // Путь к изображению по умолчанию
 
