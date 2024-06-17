@@ -42,15 +42,22 @@ function App() {
     const [isCalculating, setIsCalculating] = useState(false);
 
     const getResult = () => {
-        setImage(null); // Убираем предыдущую картинку
+        setImage(null); // Убираем предыдущее изображение
         setIsCalculating(true);
         setLoading(true);
-        setTimeout(() => {
-            const randomImage = images[Math.floor(Math.random() * images.length)];
-            setImage(randomImage);
-            setLoading(false);
-            setIsCalculating(false);
-        }, 3000);
+
+        // Выбираем случайное изображение
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+        const img = new Image();
+        img.src = randomImage;
+
+        img.onload = () => {
+            setTimeout(() => {
+                setImage(randomImage);
+                setLoading(false);
+                setIsCalculating(false);
+            }, 3000); // Задержка для анимации загрузки
+        };
     };
 
     return (
