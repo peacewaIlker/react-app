@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
+
+const tg = window.Telegram.WebApp;
 
 const images = [
     'image1.jpg', // Убедитесь, что пути к изображениям корректны
@@ -9,9 +11,14 @@ const images = [
 ];
 
 const loadingGif = 'gus.gif'; // Путь к вашему GIF файлу
-const headerImage = 'tg.jpg'; // Путь к вашему изображению для замены подписи
+const headerImage = 'tg.png'; // Путь к вашему изображению для замены подписи
 
 function App() {
+
+    useEffect(() => {
+        tg.ready()
+        tg.expand()
+    }, []);
     const [image, setImage] = useState(null);
     const [loading, setLoading] = useState(false);
     const [isCalculating, setIsCalculating] = useState(false);
