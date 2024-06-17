@@ -92,6 +92,7 @@ body {
 }
 
 button {
+  width: 200px; /* Увеличьте ширину в два раза */
   padding: 20px 40px; /* Увеличенный размер кнопки */
   font-size: 40px; /* Увеличенный размер шрифта кнопки */
   font-weight: 500;
@@ -101,6 +102,7 @@ button {
   border: none; /* Убираем рамку */
   border-radius: 25px; /* Закругленные края */
   cursor: pointer; /* Указатель курсора при наведении */
+  transition: background-color 0.3s ease; /* Сгладить переход цвета */
 }
 
 button:hover {
