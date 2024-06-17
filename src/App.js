@@ -40,6 +40,8 @@ function App() {
     const [image, setImage] = useState(defaultImage);
     const [loading, setLoading] = useState(false);
     const [isCalculating, setIsCalculating] = useState(false);
+    const [loadedGif, setLoadedGif] = useState(defaultImage); // Добавьте состояние для загрузки GIF
+
 
     const getResult = () => {
         setImage(null); // Убираем предыдущее изображение
@@ -59,6 +61,12 @@ function App() {
             }, 3000); // Задержка для анимации загрузки
         };
     };
+
+    const img = new Image();
+    img.src = loadingGif
+    img.onload = () => {
+        setLoadedGif(loadingGif)
+    }
 
     return (
         <div className="App">
@@ -84,6 +92,8 @@ function App() {
             </div>
         </div>
     );
+
 }
+
 
 export default App;
