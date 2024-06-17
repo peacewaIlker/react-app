@@ -95,13 +95,13 @@ button {
   height: 50px;
   width: 250px; /* Увеличьте ширину в два раза */
   padding: 20px 40px; /* Увеличенный размер кнопки */
-  font-size: 40px; /* Увеличенный размер шрифта кнопки */
+  font-size: 80px; /* Увеличенный размер шрифта кнопки */
   font-weight: 500;
   margin-top: 20px; /* Отступ сверху для кнопки */
   background-color: #002038; /* Фон кнопки */
   color: white; /* Цвет текста */
   border: none; /* Убираем рамку */
-  border-radius: 25px; /* Закругленные края */
+  border-radius: 10px; /* Закругленные края */
   cursor: pointer; /* Указатель курсора при наведении */
   transition: background-color 0.3s ease; /* Сгладить переход цвета */
 }
