@@ -8,7 +8,7 @@ const images = [
     // ...
 ];
 
-const loadingGif = 'gus.gif'; // Путь к вашему GIF файлу
+const loadingGif = 'loading.gif'; // Путь к вашему GIF файлу
 const headerImage = 'tg.png'; // Путь к вашему изображению для замены подписи
 const defaultImage = 'basic.png'; // Путь к изображению по умолчанию
 
@@ -52,7 +52,7 @@ function App() {
                 </div>
                 {!isCalculating && (
                     <button onClick={getResult}>
-                        {isCalculating || !image ? 'Рассчитать результат' : 'Получить прогноз'}
+                        {isCalculating || !image ? 'START HACKING' : 'START HACKING'}
                     </button>
                 )}
             </div>
