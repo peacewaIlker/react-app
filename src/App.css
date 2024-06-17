@@ -94,7 +94,7 @@ body {
 .App button {
   height: 50px;
   width: 250px; /* Увеличьте ширину в два раза */
-  padding: 2px 40px; /* Увеличенный размер кнопки */
+  padding: 2px; /* Увеличенный размер кнопки */
   font-size: 30px; /* Увеличенный размер шрифта кнопки */
   font-weight: 500;
   margin-top: 20px; /* Отступ сверху для кнопки */
@@ -120,10 +120,10 @@ button:hover {
     padding: 30px;
   }
 
-  .App button {
-    padding: 1px 20px;
-    font-size: 20px;
-  }
+  /*.App button {*/
+  /*  padding: 1px 20px;*/
+  /*  font-size: 20px;*/
+  /*}*/
 }
 
 @media (max-width: 480px) {
@@ -131,7 +131,8 @@ button:hover {
     padding: 20px;
   }
   .App button {
+    width: 200px;
     padding: 1px 20px;
-    font-size: 20px;
+    font-size: 25px;
   }
 }
