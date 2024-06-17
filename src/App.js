@@ -86,7 +86,7 @@ function App() {
                 </div>
                 {!isCalculating && (
                     <button onClick={getResult}>
-                        {isCalculating || !image ? 'START HACKING' : 'GET SIGNAL'}
+                        {isCalculating ? 'START HACKING' : 'GET SIGNAL'}
                     </button>
                 )}
             </div>
