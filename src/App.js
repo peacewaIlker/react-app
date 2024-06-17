@@ -9,7 +9,7 @@ const images = [
 ];
 
 const loadingGif = 'gus.gif'; // Путь к вашему GIF файлу
-const headerImage = 'header-image.jpg'; // Путь к вашему изображению для замены подписи
+const headerImage = 'tg.png'; // Путь к вашему изображению для замены подписи
 
 function App() {
     const [image, setImage] = useState(null);
