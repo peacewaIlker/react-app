@@ -3,11 +3,13 @@ import './App.css';
 
 const images = [
     'image1.jpg', // Убедитесь, что пути к изображениям корректны
-    'logo192.png'
+    'image2.jpg',
+    'image3.jpg',
     // ...
 ];
 
 const loadingGif = 'gus.gif'; // Путь к вашему GIF файлу
+const headerImage = 'header-image.jpg'; // Путь к вашему изображению для замены подписи
 
 function App() {
     const [image, setImage] = useState(null);
@@ -28,6 +30,13 @@ function App() {
 
     return (
         <div className="App">
+            <div className="header">
+                <div className="header-top">
+                    <img src={headerImage} alt="Header" className="header-image" />
+                    <span className="header-text">tg_marcus_top1</span>
+                </div>
+                <div className="header-text header-text-bold">MINES HACKER</div>
+            </div>
             <div className="result-container">
                 <div className="image-container">
                     {isCalculating && <img src={loadingGif} alt="Loading" />}
