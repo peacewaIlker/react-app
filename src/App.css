@@ -81,7 +81,7 @@ body {
   border: 2px solid black; /* Черная рамка */
   margin-bottom: 40px; /* Увеличенный отступ снизу для кнопки */
   border-radius: 8px; /* Опционально, для закругленных углов */
-  background: #0675cf;
+  background: #002038;
 }
 
 .image-container img {
@@ -93,7 +93,8 @@ body {
 
 button {
   padding: 20px 40px; /* Увеличенный размер кнопки */
-  font-size: 24px; /* Увеличенный размер шрифта кнопки */
+  font-size: 40px; /* Увеличенный размер шрифта кнопки */
+  font-weight: 500;
   margin-top: 20px; /* Отступ сверху для кнопки */
   background-color: #002038; /* Фон кнопки */
   color: white; /* Цвет текста */
