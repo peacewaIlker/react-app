@@ -66,10 +66,17 @@ function App() {
     const [loading, setLoading] = useState(false);
     const [isCalculating, setIsCalculating] = useState(false);
     const [loadedGif, setLoadedGif] = useState(defaultImage); // Добавьте состояние для загрузки GIF
+    const [randomNumber, setRandomNumber] = useState(null);
+
+
+    const generateRandomNumber = () => {
+        return Math.floor(Math.random() * (600 - 500 + 1)) + 500;
+    };
 
 
     const getResult = () => {
         setImage(null); // Убираем предыдущее изображение
+        setRandomNumber(null);
         setIsCalculating(true);
         setLoading(true);
 
@@ -77,6 +84,8 @@ function App() {
         const randomImage = images[Math.floor(Math.random() * images.length)];
         const img = new Image();
         img.src = randomImage;
+
+        setRandomNumber(generateRandomNumber())
 
         img.onload = () => {
             setTimeout(() => {
@@ -110,9 +119,9 @@ function App() {
                     )}
                 </div>
                 {!isCalculating && (
-                    <button onClick={getResult}>
-                        {isCalculating ? 'START HACKING' : 'GET SIGNAL'}
-                    </button>
+                    <div className="bet-container">
+                        <span className="bet">{`${randomNumber} ₴`}</span>
+                    </div>
                 )}
                 {!isCalculating && (
                     <button onClick={getResult}>

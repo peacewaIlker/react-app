@@ -79,7 +79,7 @@ body {
   height: calc(90vw / 1.3); /* Высота равна ширине, деленной на 1.3 */
   position: relative;
   border: 2px solid black; /* Черная рамка */
-  margin-bottom: 40px; /* Увеличенный отступ снизу для кнопки */
+  margin-bottom: 20px; /* Увеличенный отступ снизу для кнопки */
   border-radius: 8px; /* Опционально, для закругленных углов */
   background: #002038;
 }
@@ -89,6 +89,18 @@ body {
   height: 100%;
   object-fit: fill;
   border-radius: 8px; /* Опционально, для закругленных углов */
+}
+
+.bet-container {
+  margin-bottom: 30px;
+  height: 80px;
+  width: 150px;
+  background-color: #002038;
+}
+.bet {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
 }
 
 .App button {
