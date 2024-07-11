@@ -75,8 +75,7 @@ function App() {
 
 
     const getResult = () => {
-        setImage(null); // Убираем предыдущее изображение
-        setRandomNumber(null);
+        setImage(null); // Убираем предыдущее изображение\
         setIsCalculating(true);
         setLoading(true);
 
@@ -118,7 +117,7 @@ function App() {
                         <img src={image} alt="Result"/>
                     )}
                 </div>
-                {!isCalculating && (
+                {!isCalculating && randomNumber !== null && (
                     <div className="bet-container">
                         <span className="bet">{`${randomNumber} ₴`}</span>
                     </div>

@@ -93,9 +93,10 @@ body {
 
 .bet-container {
   margin-bottom: 30px;
-  height: 80px;
+  height: 40px;
   width: 150px;
   background-color: #002038;
+  vertical-align: middle;
 }
 .bet {
   font-size: 40px;
