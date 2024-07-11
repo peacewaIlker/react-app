@@ -44,7 +44,7 @@ const images = [
     '38.png',
     '39.png',
     '40.png',
-    '41..png',
+    '41.png',
     '42.png',
     '43.png',
     '44.png',
