@@ -96,7 +96,7 @@ body {
   height: 40px;
   width: 150px;
   background-color: #002038;
-  vertical-align: middle;
+  align-content: center;
 }
 .bet {
   font-size: 40px;
