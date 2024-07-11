@@ -96,12 +96,14 @@ body {
   height: 40px;
   width: 150px;
   background-color: #002038;
-  align-content: center;
+  text-align: center;
+  vertical-align: middle;
 }
 .bet {
   font-size: 40px;
   font-weight: bold;
   color: white;
+  line-height: 40px;
 }
 
 .App button {
